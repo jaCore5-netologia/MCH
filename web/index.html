@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JaCore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Revalia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Revalia&family=Roboto&display=swap" rel="stylesheet">
+    <script src="jquery-3.6.0.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+
+    <header>
+        <div class="header_logo">
+            <h1>JaCore</h1>
+        </div>
+        <div class="header_menu">
+            <a class="menu_item" href="#intro">ГЛАВНОЕ</a>
+            <a class="menu_item" href="#my_project">ОЦЕНИ СЕБЯ</a>
+            <a class="menu_item" href="#send">КОНТАКТЫ</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <a name="intro"></a>
+            <div class="intro_left">
+                <img class="intro_img" src="intro_logo.svg" alt="INTRO">
+            </div>
+            <div class="intro_right">
+                <h1 class="intro_title" id="myTitle">
+                    Оцени себя, как специалиста в IT сфере
+                </h1>
+                <p class="intro_text">
+                    Здравствуйте! Рады видеть Вас на нашем сайте и хотим предложить вам заполнить данные о себе, а мы на
+                    их основе подскажем вам на какую должность у вас сейчас больше всего шансов устроиться и какие
+                    рекомендации мы можем дать для увеличения шансов для получения желаемой должности.
+                </p>
+                <button class="intro_button" id="myBtn">НАПИСАТЬ НАМ</button>
+                <div class="modal" id="myModal">
+                    <div class="modal_content" id="cont">
+                        <div class="close" id="myClose">&times;</div>
+                        <div class="send_wrapper">
+                            <h1 class="modal_title">Возникли вопросы? Напишите нам</h1>
+                            <form>
+                                <div class="send_form">
+                                    <div>
+                                        <input type="text" class="form1 formstyle" placeholder="Ваше имя">
+                                        <input type="email" class="form2 formstyle" placeholder="Ваш e-mail">
+                                    </div>
+                                    <div>
+                                        <textarea class="form3 formstyle" id="" cols="30" rows="10"
+                                            placeholder="Сообщение"></textarea>
+                                    </div>
+                                    <button class="send_button">отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="my_project">
+            <a name="my_project"></a>
+            <div class="wrapper">
+                <div class="my_project_wrapper">
+                    <div class="my_project_block">
+                        <img src="ht.png" alt="num" class="project_img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div>
+                <p class="about_title">Оцени себя!</p>
+            </div>
+            <p class="find">Выберете язык, который вы знаете:</p>
+            <span class="custom-dropdown big">
+                <select id="PL_id">
+                    <option value="0">Добавить</option>
+                    <option value="1">Java</option>
+                    <option value="2">C/C++</option>
+                    <option value="3">Python</option>
+                </select>
+            </span>
+
+            <p class="find">Добавить фреймворки, которые вы знаете:</p>
+            <div><span class="custom-dropdown big">
+                    <select id="fr_id" disabled>
+                        <option value="0">Добавить</option>
+                    </select>
+                    <select id="ch_id" disabled>
+                        <option value="0">Добавить</option>
+                    </select>
+                </span>
+            </div>
+            <div><span class="custom-dropdown big">
+                    <select id="fr1_id" disabled>
+                        <option value="0">Добавить</option>
+                    </select>
+                    <select id="ch1_id" disabled>
+                        <option value="0">Добавить</option>
+                    </select>
+                </span>
+            </div>
+            <div><span class="custom-dropdown big">
+                    <select id="fr2_id" disabled>
+                        <option value="0">Добавить</option>
+                    </select>
+                    <select id="ch2_id" disabled>
+                        <option value="0">Добавить</option>
+                    </select>
+                </span>
+            </div>
+            <button class="intro_button1" id="myBtn1">Узнай свои шансы</button>
+        </section>
+
+        <section class="send">
+            <a name="send"></a>
+            <div class="wrapper">
+                <div class="send_wrapper">
+                    <h1 class="send_title">Возникли вопросы? Напишите нам</h1>
+                    <p class="send_text">Если у вас возникли вопросы по работе нашего проекта, будем всегда рады вашим
+                        вопросам!
+                    </p>
+                    <form>
+                        <div class="send_form">
+                            <div>
+                                <input type="text" class="form1 formstyle" placeholder="Ваше имя">
+                                <input type="email" class="form2 formstyle" placeholder="Ваш e-mail">
+                            </div>
+                            <div>
+                                <textarea class="form3 formstyle" id="" cols="30" rows="10"
+                                    placeholder="Сообщение"></textarea>
+                            </div>
+                            <button class="send_button">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footer_wrapper">
+                <div class="footer_left">
+                    <h3 class="footer_name">Команда JaCore</h3>
+                    <p class="copyright">(c) 2021. Все права защищены.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="lightzoom/style.css" type="text/css">
+    <script type="text/javascript" src="lightzoom/lightzoom.js"></script>
+    <script
+        type="text/javascript">jQuery('.lightzoom').lightzoom({ speed: 400, viewTitle: true, isOverlayClickClosing: true });</script>
+    <script src="myscript.js"></script>
+</body>
+
+</html>
