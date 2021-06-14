@@ -245,6 +245,7 @@ header{
     text-align: center;
     letter-spacing: 0.1em;
     color: #FFFFFF;
+    border-radius: 3px;
 }
 
 .modal{
@@ -452,5 +453,7 @@ footer{
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
+    border-radius: 3px;
+	margin-bottom: 20px;
 }
 
